@@ -1,4 +1,4 @@
-Width:
+--Width:
 psc_control-width20em   [1..20]
 psc_control-width30pct  [1..100]
 psc_control-fullwidth
@@ -7,11 +7,11 @@ psc_button‐minwidth20em
 psc_width-50pct 
 psc_value-width30pct
 
-Height:
+--Height:
 psc_control-height10em   [1..20]
 psc_control-height10pct [1..100]
 
-Placement:
+--Placement:
 psc_float-left
 psc_float-right
 psc_align‐center
@@ -19,19 +19,19 @@ psc_halign‐center
 psc_halign-right
 psc_padding-1em
 
-Button:
+--Button:
 psc_primary
 psc_button‐minwidth20em
 psc_float-left
 psc_float-right
 
-Long Edit Box:
+--Long Edit Box:
 psc_control-height5em
 
-Visibility:
+--Visibility:
 ps_hidden
 
-Labels:
+--Labels:
 psc_label-top 
 psc_label-none 
 ps_label‐hide
@@ -46,7 +46,7 @@ psc_label-valigntop
 psc_label-valignbottom
 psc_label-valignbaseline
 
-Groupbox Columns:
+--Groupbox Columns:
 psc_column-2
 psc_columnitem-1of2
 psc_column-3
@@ -55,12 +55,12 @@ psc_width-50pct
 psc_border-content
 psc_pagepadding-content
 
-Text:
+--Text:
 psc_value-ellipsis
 psc_strong
 psc_text_center
 
-Misc:
+--Misc:
 psa_pageaction
 psc_align‐center
 psc_halign‐center
@@ -74,5 +74,13 @@ psc_list-linkmenu
 psc_list-has-icon
 psc_selected
 psc_more
+
+--Tabs and Subtabs
+psc_list-vtab psc_list-linkmenu psc_has-link psc_has-count
+psc_list-vtab psa_vtab
+psc_list-has-icon
+psc_gridlist-borderall
+psc_gridrow-sep-breadcrumb
+psc_list-2col
 
 ps_box-text
