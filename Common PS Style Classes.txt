@@ -1,0 +1,78 @@
+Width:
+psc_control-width20em   [1..20]
+psc_control-width30pct  [1..100]
+psc_control-fullwidth
+psc_control-widthauto
+psc_button‐minwidth20em
+psc_width-50pct 
+psc_value-width30pct
+
+Height:
+psc_control-height10em   [1..20]
+psc_control-height10pct [1..100]
+
+Placement:
+psc_float-left
+psc_float-right
+psc_align‐center
+psc_halign‐center
+psc_halign-right
+psc_padding-1em
+
+Button:
+psc_primary
+psc_button‐minwidth20em
+psc_float-left
+psc_float-right
+
+Long Edit Box:
+psc_control-height5em
+
+Visibility:
+ps_hidden
+
+Labels:
+psc_label-top 
+psc_label-none 
+ps_label‐hide
+ps_label‐show
+psc_colon
+psc_label-normaltext
+psc_label-haligncenter
+psc_label-halignleft
+psc_label-halignright
+psc_label-valignmiddle
+psc_label-valigntop
+psc_label-valignbottom
+psc_label-valignbaseline
+
+Groupbox Columns:
+psc_column-2
+psc_columnitem-1of2
+psc_column-3
+psc_columnitem-1of3
+psc_width-50pct 
+psc_border-content
+psc_pagepadding-content
+
+Text:
+psc_value-ellipsis
+psc_strong
+psc_text_center
+
+Misc:
+psa_pageaction
+psc_align‐center
+psc_halign‐center
+psc_halign-right 
+asu_nr_demo
+psc_display-inlineblock 
+psa_box-controlwidth
+psc_column-2 psc_columnitems*
+pst_panel-side1
+psc_list-linkmenu 
+psc_list-has-icon
+psc_selected
+psc_more
+
+ps_box-text
