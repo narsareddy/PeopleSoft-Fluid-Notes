@@ -1,0 +1,46 @@
+--Set View Port
+import PT_PAGE_UTILS:Utils;
+Local PT_PAGE_UTILS:Utils &oUtils = create PT_PAGE_UTILS:Utils();
+&oUtils.SetDefaultViewport();
+----------------------------------------------------------------
+
+--SetSide1ModeFixed
+import PT_PAGE_UTILS:PanelController;
+
+Local PT_PAGE_UTILS:PanelController &oPanelController = create PT_PAGE_UTILS:PanelController();
+
+&PanelController.Initialize( True);
+&PanelController.SetSide1ModeFixed();
+----------------------------------------------------------------
+
+--Toggle Selected Style
+Component Rowset &rsTrans;
+
+For &i = 1 To &rsTrans.ActiveRowCount
+   &rsTrans(&i).Style = " ";
+End-For;
+
+Evaluate SCC_XLAT_VIEW.FIELDVALUE.Value
+When = "ADDR"
+   &rsTrans(CurrentRowNumber()).Style = "psc_selected";
+   TransferPage(Page.ASU_NR_ADDR_FL);
+When = "EMAI"
+   &rsTrans(CurrentRowNumber()).Style = "psc_selected";
+   TransferPage(Page.ASU_NR_EMAIL_FL);
+When = "PHON"
+   &rsTrans(CurrentRowNumber()).Style = "psc_selected";
+   TransferPage(Page.ASU_NR_PHONES_FL);
+End-Evaluate;
+----------------------------------------------------------------
+
+--Preferred Flag
+If &rsPhone(&i).HR_PRSNL_PHN_VW.PREF_PHONE_FLAG.Value = "Y" Then
+  &rsPhone(&i).DERIVED_HR_FL.HR_ICON_01.Value = Image.PS_PREFERRED_FLG_S_FL;
+  &rsPhone(&i).DERIVED_HR_FL.HR_ICON_01.Label = MsgGetText(18032, 1429, "Message not found."); /* Preferred */
+Else
+  &rsPhone(&i).DERIVED_HR_FL.HR_ICON_01.Value = Image.PT_PIXEL;
+  &rsPhone(&i).DERIVED_HR_FL.HR_ICON_01.Label = MsgGetText(18032, 1430, "Message not found."); /* Not Preferred */
+  If %Request.BrowserDeviceFormFactor = %FormFactor_Small Then
+    &rsPhone(&i).DERIVED_HR_FL.HR_ICON_01.FreeFormStyleName = "psc_hidden";
+  End-If;
+End-If;
