@@ -83,4 +83,8 @@ psc_gridlist-borderall
 psc_gridrow-sep-breadcrumb
 psc_list-2col
 
+--Grids:
+psc_grid-norowcount
+psc_width-50pct 
+
 ps_box-text
