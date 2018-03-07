@@ -85,6 +85,7 @@ psc_list-2col
 
 --Grids:
 psc_grid-norowcount
+psc_grid-nocolheaders (Hide column headers, useful on SmallFF)
 psc_width-50pct 
 
 ps_box-text
