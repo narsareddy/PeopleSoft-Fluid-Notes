@@ -90,11 +90,11 @@ psc_width-50pct
 
 --Display Control & Related Display
 psc_reldisp-container (applied on the layout groupbox surrounding the Display Control & Related Display fields)
-psc_reldisp‐field (applied on the Display Control field)
-psc_reldisp‐prompt (applied on the prompt image)
-psc_reldisp‐units (applied on static text like hours, minutes etc.)
-psc_hide‐reldispunits
-psc_reldisp‐value (applied on the Related Display field)
-psc_hide‐reldispvalue
+psc_reldisp-field (applied on the Display Control field)
+psc_reldisp-prompt (applied on the prompt image)
+psc_reldisp-units (applied on static text like hours, minutes etc.)
+psc_hide-reldispunits
+psc_reldisp-value (applied on the Related Display field)
+psc_hide-reldispvalue
 
 ps_box-text
