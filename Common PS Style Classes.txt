@@ -7,6 +7,11 @@ psc_button‐minwidth20em
 psc_width-50pct 
 psc_value-width30pct
 
+--Max Width (usually for grids on a page)
+psc_maxwidth-60em (LargeFF and XLargeFF)
+psc_maxwidth-40em (MediumFF)
+psc_maxwidth-20em (SmallFF)
+
 --Height:
 psc_control-height10em   [1..20]
 psc_control-height10pct [1..100]
