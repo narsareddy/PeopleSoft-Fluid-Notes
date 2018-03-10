@@ -37,6 +37,7 @@ psc_control-height5em
 ps_hidden
 
 --Labels:
+psc_nolabel
 psc_label-top 
 psc_label-none 
 ps_label‐hide
