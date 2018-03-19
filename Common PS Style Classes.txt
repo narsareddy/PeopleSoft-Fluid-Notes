@@ -29,6 +29,8 @@ psc_primary
 psc_button‐minwidth20em
 psc_float-left
 psc_float-right
+psc_button-next
+psc_button-previous
 
 --Long Edit Box:
 psc_control-height5em
