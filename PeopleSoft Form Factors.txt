@@ -1,0 +1,4 @@
+0   %FormFactor_Small   : Applies to most smartphones.
+1   %FormFactor_Medium  : Applies to 7-inch tablets.
+2   %FormFactor_Large   : Applies to 10-inch tablets and laptops.
+3   %FormFactor_Xlarge  : Applies to large monitors.
