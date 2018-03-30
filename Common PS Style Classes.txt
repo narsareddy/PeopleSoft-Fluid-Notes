@@ -23,6 +23,7 @@ psc_align‐center
 psc_halign‐center
 psc_halign-right
 psc_padding-1em
+psc_margin-left33pct 
 
 --Button:
 psc_primary
@@ -53,6 +54,8 @@ psc_label-valignmiddle
 psc_label-valigntop
 psc_label-valignbottom
 psc_label-valignbaseline
+psc_label_filler
+psc_label‐width45pct
 
 --Groupbox Columns:
 psc_column-2
